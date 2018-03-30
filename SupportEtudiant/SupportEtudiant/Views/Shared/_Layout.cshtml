@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/all-plugins")
+    @Styles.Render("~/Content/plugin-chosen")
+    @Styles.Render("~/Content/plugin-iCheck")
+    @Styles.Render("~/font-awesome/css")
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
+    <link href="/favicon.ico" type="image/x-icon" rel="FaviconIcon" />
+</head>
+<body class="full-height-layout">
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/inspinia/plugins")
+
+    <h1>@ViewBag.Title</h1>
+    
+    @RenderBody()
+
+</body>
+</html>
