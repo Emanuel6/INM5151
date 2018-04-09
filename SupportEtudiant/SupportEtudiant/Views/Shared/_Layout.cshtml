@@ -5,25 +5,56 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    @Styles.Render("~/Content/all-plugins")
-    @Styles.Render("~/Content/plugin-chosen")
-    @Styles.Render("~/Content/plugin-iCheck")
-    @Styles.Render("~/font-awesome/css")
-    @Styles.Render("~/Content/bootstrap")
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/font-awesome/css")
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+        }
+
+        .wrapper {
+            height: auto; /* These two lines were the key. */
+            min-height: 100%;
+            /*overflow:   hidden;*/ /* Do not use this, it crops in small browsers. */
+            margin: 0px auto;
+            padding: 0px;
+        }
+    </style>
     <link href="/favicon.ico" type="image/x-icon" rel="FaviconIcon" />
 </head>
-<body class="full-height-layout">
-
+<body class="pace-done fixed-sidebar fixed-nav">
+    @Scripts.Render("~/bundles/custom")
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/app")
-    @Scripts.Render("~/bundles/inspinia/plugins")
-
-    <h1>@ViewBag.Title</h1>
+    @Scripts.Render("~/plugins/slimScroll")
+    @Scripts.Render("~/bundles/inspinia")
+    @RenderSection("scripts", required: false)
     
-    @RenderBody()
+    <!-- Wrapper-->
+    <div id="wrapper">
 
+        <!-- Navigation -->
+        @Html.Partial("_Navigation")
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg" style="height:100%">
+            @*<div class="container-fluid" style="margin-top:60px; padding-left:0px">*@
+                <!-- Top Navbar -->
+                @Html.Partial("_TopNavbar")
+
+                <!-- Main view  -->
+                @RenderBody()
+
+                <!-- Footer -->
+                @Html.Partial("_Footer")
+            @*</div>*@
+           
+
+        </div>
+        <!-- End page wrapper-->
+    </div>
+    <!-- End wrapper-->
 </body>
 </html>

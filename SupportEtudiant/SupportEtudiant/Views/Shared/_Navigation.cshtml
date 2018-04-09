@@ -1,0 +1,32 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation" style="">
+    @*<div class="sidebar-collapse">*@
+        <ul class="nav metismenu" id="side-menu">
+            <li>
+                <a href="@Url.Action("Index", "Home")" data-toggle="tooltip" data-placement="right" title="Accueil">
+                    <i class="fa fa-home fa-lg" ></i>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Forum")" data-toggle="tooltip" data-placement="right" title="Forum">
+                    <i class="fa fa-comments fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Groupe")" data-toggle="tooltip" data-placement="right" title="Groupes">
+                    <i class="fa fa-users fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Stage")" data-toggle="tooltip" data-placement="right" title="Stages">
+                    <i class="fa fa-briefcase fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    @*</div>*@
+</nav>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
