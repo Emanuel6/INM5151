@@ -141,6 +141,7 @@
     <Content Include="fonts\font-awesome\css\fontawesome.css" />
     <Content Include="fonts\font-awesome\css\fontawesome.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\img_avatar.png" />
     <Content Include="Scripts\app\inspinia.js" />
     <Content Include="Scripts\app\skin.config.min.js" />
     <Content Include="fonts\font-awesome\less\fa-brands.less" />
@@ -250,6 +251,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_TopNavbar.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Home\_HomeForum.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -260,7 +262,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\plugins\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

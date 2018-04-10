@@ -10,11 +10,11 @@ $(document).ready(function () {
 
 
     // Add body-small class if window less than 768px
-    if ($(this).width() < 769) {
-        $('body').addClass('body-small')
-    } else {
-        $('body').removeClass('body-small')
-    }
+    //if ($(this).width() < 769) {
+    //    $('body').addClass('body-small')
+    //} else {
+    //    $('body').removeClass('body-small')
+    //}
 
     // MetsiMenu
     $('#side-menu').metisMenu();
@@ -173,13 +173,13 @@ $(document).ready(function () {
 
 
 // Minimalize menu when screen is less than 768px
-$(window).bind("resize", function () {
-    if ($(this).width() < 769) {
-        $('body').addClass('body-small')
-    } else {
-        $('body').removeClass('body-small')
-    }
-});
+//$(window).bind("resize", function () {
+//    if ($(this).width() < 769) {
+//        $('body').addClass('body-small')
+//    } else {
+//        $('body').removeClass('body-small')
+//    }
+//});
 
 // Local Storage functions
 // Set proper body class and plugins based on user configuration
@@ -202,18 +202,18 @@ $(document).ready(function () {
             });
         }
 
-        if (collapse == 'on') {
-            if (body.hasClass('fixed-sidebar')) {
-                if (!body.hasClass('body-small')) {
-                    body.addClass('mini-navbar');
-                }
-            } else {
-                if (!body.hasClass('body-small')) {
-                    body.addClass('mini-navbar');
-                }
+        //if (collapse == 'on') {
+        //    if (body.hasClass('fixed-sidebar')) {
+        //        if (!body.hasClass('body-small')) {
+        //            body.addClass('mini-navbar');
+        //        }
+        //    } else {
+        //        if (!body.hasClass('body-small')) {
+        //            body.addClass('mini-navbar');
+        //        }
 
-            }
-        }
+        //    }
+        //}
 
         if (fixednavbar == 'on') {
             $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
@@ -251,24 +251,24 @@ function animationHover(element, animation) {
 }
 
 function SmoothlyMenu() {
-    if (!$('body').hasClass('mini-navbar') || $('body').hasClass('body-small')) {
-        // Hide menu in order to smoothly turn on when maximize menu
-        $('#side-menu').hide();
-        // For smoothly turn on menu
-        setTimeout(
-            function () {
-                $('#side-menu').fadeIn(400);
-            }, 200);
-    } else if ($('body').hasClass('fixed-sidebar')) {
-        $('#side-menu').hide();
-        setTimeout(
-            function () {
-                $('#side-menu').fadeIn(400);
-            }, 100);
-    } else {
-        // Remove all inline style from jquery fadeIn function to reset menu state
-        $('#side-menu').removeAttr('style');
-    }
+    //if (!$('body').hasClass('mini-navbar') || $('body').hasClass('body-small')) {
+    //    // Hide menu in order to smoothly turn on when maximize menu
+    //    $('#side-menu').hide();
+    //    // For smoothly turn on menu
+    //    setTimeout(
+    //        function () {
+    //            $('#side-menu').fadeIn(400);
+    //        }, 200);
+    //} else if ($('body').hasClass('fixed-sidebar')) {
+    //    $('#side-menu').hide();
+    //    setTimeout(
+    //        function () {
+    //            $('#side-menu').fadeIn(400);
+    //        }, 100);
+    //} else {
+    //    // Remove all inline style from jquery fadeIn function to reset menu state
+    //    $('#side-menu').removeAttr('style');
+    //}
 }
 
 // Dragable panels

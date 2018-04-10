@@ -7,18 +7,39 @@
     div.row.home-header {
         height: 100px;
     }
-    div.row.home-header > h1 {
-        font-size: 60px;
+
+        div.row.home-header > h1 {
+            font-size: 60px;
+        }
+
+    div.vote-info > span {
+        margin-right: 6px;
+    }
+
+    .vote-item {
+        padding: 2px;
+    }
+
+    .vote-title {
+        margin-left: 0px;
+        font-size: 13px;
+    }
+
+    .vote-info {
+        margin-left: 0px;
+    }
+    #home .panel {
+        margin: 20px
     }
 </style>
 
-<div class="animated fadeInUp">
+<div id="home" class="animated fadeInUp">
     <div class="row" style="">
         <div class="col-md-4 text-center border-right">
             <div class="row home-header">
                 <h1>FORUM</h1>
             </div>
-
+            @Html.Partial("_HomeForum")
         </div>
         <div class="col-md-4 text-center border-right">
             <div class="row home-header">
