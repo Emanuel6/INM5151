@@ -13,5 +13,17 @@ namespace SupportEtudiant.Controllers
         {
             return View();
         }
+
+        // GET
+        public ActionResult ForumTopicList()
+        {
+            return View();
+        }
+
+        // GET
+        public ActionResult ForumDiscussion()
+        {
+            return View();
+        }
     }
 }

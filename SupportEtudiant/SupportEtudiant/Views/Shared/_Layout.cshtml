@@ -15,12 +15,29 @@
         }
 
         .wrapper {
-            height: auto; /* These two lines were the key. */
+            height: auto;
             min-height: 100%;
-            /*overflow:   hidden;*/ /* Do not use this, it crops in small browsers. */
             margin: 0px auto;
-            padding: 0px;
         }
+
+
+
+        a {
+            color: #be4500;
+        }
+
+            a:hover {
+                color: #8e5f44;
+            }
+
+            a.no-color {
+                color: inherit;
+            }
+
+            a.block-link {
+                display: block;
+                color: inherit;
+            }
     </style>
     <link href="/favicon.ico" type="image/x-icon" rel="FaviconIcon" />
 </head>
@@ -31,7 +48,7 @@
     @Scripts.Render("~/plugins/slimScroll")
     @Scripts.Render("~/bundles/inspinia")
     @RenderSection("scripts", required: false)
-    
+
     <!-- Wrapper-->
     <div id="wrapper">
 
@@ -41,16 +58,16 @@
         <!-- Page wraper -->
         <div id="page-wrapper" class="gray-bg" style="height:100%">
             @*<div class="container-fluid" style="margin-top:60px; padding-left:0px">*@
-                <!-- Top Navbar -->
-                @Html.Partial("_TopNavbar")
+            <!-- Top Navbar -->
+            @Html.Partial("_TopNavbar")
 
-                <!-- Main view  -->
-                @RenderBody()
+            <!-- Main view  -->
+            @RenderBody()
 
-                <!-- Footer -->
-                @Html.Partial("_Footer")
+            <!-- Footer -->
+            @Html.Partial("_Footer")
             @*</div>*@
-           
+
 
         </div>
         <!-- End page wrapper-->
