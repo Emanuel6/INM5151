@@ -8,7 +8,7 @@ namespace SupportEtudiant.Controllers
 {
     public class ProfilController : Controller
     {
-        // GET: Stage
+        // GET: Profil
         public ActionResult Index()
         {
             return View();

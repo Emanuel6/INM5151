@@ -1,3 +1,240 @@
 ﻿@{
     ViewBag.Title = "SupportEtudiant - Profil";
 }
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Profil</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Home")">Home</a>
+            </li>
+            <li class="active">
+                <strong>Profil</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row m-b-lg m-t-lg" style="margin-bottom: 0px">
+        <div class="col-md-6">
+            <div class="profile-image">
+                <img src="~/Images/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">
+            </div>
+            <div class="profile-info">
+                <div class="">
+                    <div>
+                        <h2 class="no-margins">
+                            Alex Smith
+                        </h2>
+                        <h4>Etudiant</h4>
+                        <span>
+                            Bac. en informatique et génie logiciel - Faculté des sciences
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <table class="table small m-b-xs">
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>142</strong> Publications
+                        </td>
+                        <td>
+                            <strong>6</strong> Équipes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>61</strong> Commentaires
+                        </td>
+                        <td>
+                            <strong>10</strong> Coéquipiers
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>100</strong> <i class="far fa-heart"></i>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-3">
+            <small>Appréciation globale</small>
+            <div class="" style="margin-top: 10px; margin-bottom: 20px">
+                <i class="fas fa-star fa-lg" style="color: #be4500"></i>
+                <i class="fas fa-star fa-lg" style="color: #be4500"></i>
+                <i class="fas fa-star fa-lg" style="color: #be4500"></i>
+                <i class="fas fa-star fa-lg" style="color: #be4500"></i>
+                <i class="fas fa-star-half fa-lg" style="color: #be4500"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row text-left">
+        <button type="button" class="btn btn-primary btn-sm" style="background-color:#be4500; border-color:#be4500; margin-bottom: 20px; margin-left: 16px;">
+            <i class="fa fa-pencil-alt fa-sm" style=""></i>&nbsp;<span style="">&nbsp;Modifier le profil</span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>Qui suis-je ?</h3>
+                    <p class="small">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered alteration in some form, by injected humour, or randomised words which don't.
+                        <br />
+                        <br />
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing
+                    </p>
+                    <p class="small font-bold">
+                        <span><i class="fa fa-circle text-navy"></i> Online status</span>
+                    </p>
+                </div>
+            </div>
+            <div class="ibox">
+                <div class="ibox-content">
+                    <h3>Coéquipiers</h3>
+                    <p class="small">
+                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing
+                    </p>
+                    <div class="user-friends">
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a3.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a1.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a2.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a4.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a5.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a6.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a7.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a8.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a2.jpg"></a>
+                        <a href=""><img alt="image" class="img-circle" src="~/Images/a1.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="social-feed-box">
+                <div class="social-avatar">
+                    <a href="@Url.Action("Index", "Profil")" class="pull-left">
+                        <img class="img-circle img-sm" src="~/Images/a4.jpg" alt="Avatar">
+                    </a>
+                    <div class="media-body">
+                        <a href="@Url.Action("Index", "Profil")">
+                            Alex Smith
+                        </a>
+                        <small class="text-muted">1h</small>
+                    </div>
+                </div>
+                <div class="social-body">
+                    <a class="no-color" href="@Url.Action("ForumDiscussion", "Forum")">
+                        <h4>Titre de la question ?</h4>
+                        <p>
+                            Packages and web page editors now use Lorem Ipsum as their
+                            default model text. Page editors now use Lorem Ipsum as their
+                            default model text.
+                        </p>
+                    </a>
+                    <hr />
+                    <div class="row small">
+                        <div class="col-xs-4 text-left">
+                            33 views
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <a href="@Url.Action("ForumDiscussion", "Forum")" style="color:inherit">2 commentaires</a>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            1 <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-feed-box">
+                <div class="social-avatar">
+                    <a href="@Url.Action("Index", "Profil")" class="pull-left">
+                        <img class="img-circle img-sm" src="~/Images/a4.jpg" alt="Avatar">
+                    </a>
+                    <div class="media-body">
+                        <a href="@Url.Action("Index", "Profil")">
+                            Alex Smith
+                        </a>
+                        <small class="text-muted">1j</small>
+                    </div>
+                </div>
+                <div class="social-body">
+                    <a class="no-color" href="@Url.Action("ForumDiscussion", "Forum")">
+                        <h4>Titre de la question ?</h4>
+                        <img src="~/Images/gallery/9.jpg" class="img-responsive">
+                    </a>
+                    <hr />
+                    <div class="row small">
+                        <div class="col-xs-4 text-left">
+                            33 views
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <a href="@Url.Action("ForumDiscussion", "Forum")" style="color:inherit">2 commentaires</a>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            1 <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-feed-box">
+                <div class="social-avatar">
+                    <a href="@Url.Action("Index", "Profil")" class="pull-left">
+                        <img class="img-circle img-sm" src="~/Images/a4.jpg" alt="Avatar">
+                    </a>
+                    <div class="media-body">
+                        <a href="@Url.Action("Index", "Profil")">
+                            Alex Smith
+                        </a>
+                        <small class="text-muted">1mois</small>
+                    </div>
+                </div>
+                <div class="social-body">
+                    <a class="no-color" href="@Url.Action("ForumDiscussion", "Forum")">
+                        <h4>Titre de la question ?</h4>
+                        <p>
+                            Packages and web page editors now use Lorem Ipsum as their
+                            default model text. Page editors now use Lorem Ipsum as their
+                            default model text.
+                        </p>
+                        <p>
+                            Packages and web page editors now use Lorem Ipsum as their
+                            default model text. Page editors now use Lorem Ipsum as their
+                            default model text.
+                        </p>
+                    </a>
+                    <hr />
+                    <div class="row small">
+                        <div class="col-xs-4 text-left">
+                            33 views
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <a href="@Url.Action("ForumDiscussion", "Forum")" style="color:inherit">2 commentaires</a>
+                        </div>
+                        <div class="col-xs-4 text-right">
+                            1 <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 m-b-lg">
+
+        </div>
+    </div>
+</div>
