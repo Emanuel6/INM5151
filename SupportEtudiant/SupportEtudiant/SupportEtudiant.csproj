@@ -317,6 +317,8 @@
     <Content Include="Views\Home\_HomeGroupe.cshtml" />
     <Content Include="Views\Home\_HomeStage.cshtml" />
     <Content Include="Views\Profil\Index.cshtml" />
+    <Content Include="Views\Groupe\GroupeRepertoire.cshtml" />
+    <Content Include="Views\Groupe\GroupeDiscussion.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
