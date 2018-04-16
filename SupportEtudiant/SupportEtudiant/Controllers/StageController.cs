@@ -13,5 +13,14 @@ namespace SupportEtudiant.Controllers
         {
             return View();
         }
+
+
+        // GET
+        public ActionResult StageDescription()
+        {
+            return View();
+        }
+        
+
     }
 }

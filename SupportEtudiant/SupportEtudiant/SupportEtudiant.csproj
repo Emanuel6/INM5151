@@ -319,6 +319,7 @@
     <Content Include="Views\Profil\Index.cshtml" />
     <Content Include="Views\Groupe\GroupeRepertoire.cshtml" />
     <Content Include="Views\Groupe\GroupeDiscussion.cshtml" />
+    <Content Include="Views\Stage\StageDescription.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
